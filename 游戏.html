@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MANTA</title>
+    <script src="游戏.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--这是style-->
+      <body class="bg">
+    <style type="text/css">
+      .bg{
+        background-image:url("manta标志.jpg");
+        background-position:center;
+        background-size:100% auto;
+        background-size:auto 100%;
+        background-attachment:fixed;
+      }
+      h1{
+        font-size:32px;
+        padding:36px;
+        text-align:center;
+        color:white;
+        }
+        h2{
+          font-size:20px;
+          text-align:center;
+          color:white;
+          }
+.mybb{
+  margin-right:60px;
+  margin-left:60px;
+  font-size:24px;
+  color:#b28f59;
+  padding:10px 20px;
+}
+.button{
+  background-color:white;
+  font-size:24px;
+  padding:10px 20px;
+  text-align:center;
+  color:#b28f59;
+  }
+  h5{
+    font-size:10px;
+    text-align:center;
+    color:#b28f59;
+}
+      </style>
+      <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="first/小人.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+<div style="text-align:center;">
+<h1>猜歌名</h1>
+<h2>点击下方按钮听音频</h2>
+<h5>再次点击可暂停</h5>
+<!--这是个占位啊呀呀呀呀qwq-->
+    <p aria-hidden="true">
+      <div class="opacity-0">...</div>
+
+<audio src="声展/MANTA - 诺亚 [mqms2].mp3" controls="controls" preload id="music1" hidden>
+</audio>
+<button id="a" class="mybb" onclick="a();">1</button>
+<script>
+function a(){
+  var audio = document.getElementById('music1');
+if(audio.paused){
+  audio.play();//audio.play();// 播放
+}
+else{
+  audio.pause();// 暂停
+}
+}
+</script>
+<audio src="声展/MANTA - 思无字 [mqms2].mp3" controls="controls" preload id="music2" hidden>
+</audio>
+<button id="b" class="mybb" onclick="b();">2</button>
+<script>
+function b(){
+  var audio = document.getElementById('music2');
+if(audio.paused){
+  audio.play();//audio.play();// 播放
+}
+else{
+  audio.pause();// 暂停
+}
+}
+</script>
+<audio src="声展/MANTA - SIREN [mqms2].mp3" controls="controls" preload id="music3" hidden>
+</audio>
+<button id="c" class="mybb" onclick="c();">3</button>
+<script>
+function c(){
+  var audio = document.getElementById('music3');
+if(audio.paused){
+  audio.play();//audio.play();// 播放
+}
+else{
+  audio.pause();// 暂停
+}
+}
+</script>
+
+<audio src="声展/MANTA - 断臂的维纳斯 [mqms2].mp3" controls="controls" preload id="music4" hidden>
+</audio>
+<button id="d" class="mybb" onclick="d();">4</button>
+<script>
+function d(){
+  var audio = document.getElementById('music4');
+if(audio.paused){
+  audio.play();//audio.play();// 播放
+}
+else{
+  audio.pause();// 暂停
+}
+}
+</script>
+<audio src="声展/MANTA - 光与影 [mqms2].mp3" controls="controls" preload id="music5" hidden>
+</audio>
+<button id="e" class="mybb" onclick="e();">5</button>
+<script>
+function e(){
+  var audio = document.getElementById('music5');
+if(audio.paused){
+  audio.play();//audio.play();// 播放
+}
+else{
+  audio.pause();// 暂停
+}
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<!--这是个占位啊呀呀呀呀qwq-->
+    <p aria-hidden="true">
+      <div class="opacity-0">...</div>
+      <!--这是个占位啊呀呀呀呀qwq-->
+          <p aria-hidden="true">
+            <div class="opacity-0">...</div>
+
+<h2>写下你的答案吧</h2>
+<div style="text-align:center;">
+<button onclick="answer()"class="button" ><b>回答1</b></button>
+<script>
+var score=0;
+function answer(){
+  var response=prompt("写下你认为对的歌名");
+  if(response=="诺亚"){
+    alert("答对啦！你真是超爱他们");
+    score+=20;
+  }
+  else {
+    alert("糟糕，回答错误");
+  }
+}
+
+</script>
+<button onclick="answer1()"class="button" ><b>回答2</b></button>
+<script>
+var score=0;
+function answer1(){
+  var response=prompt("写下你认为对的歌名");
+  if(response=="思无字"){
+    alert("答对啦！你真是超爱他们");
+    score+=20;
+  }
+  else {
+    alert("糟糕，回答错误，再听听看吧");
+  }
+}
+</script>
+<button onclick="answer2()"class="button"><b>回答3</b></button>
+<script>
+var score=0;
+function answer2(){
+  var response=prompt("写下你认为对的歌名");
+  if(response=="SIREN"){
+    alert("答对啦！你真是超爱他们");
+    score+=20;
+  }
+  else {
+    alert("糟糕，回答错误，再听听看吧");
+  }
+}
+</script>
+<button onclick="answer3()"class="button" ><b>回答4</b></button>
+<script>
+var score=0;
+function answer3(){
+  var response=prompt("写下你认为对的歌名");
+  if(response=="断臂的维纳斯"){
+    alert("答对啦！你真是超爱他们");
+    score+=20;
+  }
+  else {
+    alert("糟糕，回答错误，再听听看吧");
+  }
+}
+</script>
+<button onclick="answer4()"class="button"><b>回答5</b></button>
+<script>
+var score=0;
+function answer4(){
+  var response=prompt("写下你认为对的歌名");
+  if(response=="光与影"){
+    alert("答对啦！你真是超爱他们");
+    score+=20;
+  }
+  else {
+    alert("糟糕，回答错误，再听听看吧");
+  }
+}
+</script>
+
+</div>
+<!--这是个占位啊呀呀呀呀qwq-->
+    <p aria-hidden="true">
+      <div class="opacity-0">...</div>
+
+<div style="text-align:center;">
+<button onclick="sayhello()"style="border-color:#b28f59;background: #ddba8a;width: 200px;height: 40px;color:white" ><b>得分</b></button>
+<script>
+var score=0;
+function sayhello(){
+  if(score==100){
+    alert("你的得分是 "+score+" ,简直是MANTA小曲库！");
+  }
+  if(score>10&score<=50){
+    alert("你的得分是 "+score+" ,继续加油哦！");
+  }
+  if(score>50&score<=99){
+    alert("你的得分是 "+score+" ,已经很棒了！");
+  }
+  if(score==0){
+    alert("你的得分是 "+score+" ,哈哈你是不是听歌不喜欢记歌名呀？");
+  }
+}
+</script>
+</div>
+<!--这是个占位啊呀呀呀呀qwq-->
+    <p aria-hidden="true">
+      <div class="opacity-0">...</div>
+
+      <a href="最终.html">
+        <button class="button">
+          <b>
+          点我进入留言板
+          </b>
+        </button>
+  </body>
+</html>
