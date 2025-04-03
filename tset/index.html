@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xhs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 顶部导航栏 -->
+      <header class="header">
+        <div class="logo">小红书</div>
+        <div class="search-bar">
+          <input type="text" placeholder="登录探索更多内容" />
+        </div>
+        <div class="header-right">
+          <a href="#" class="header-link">创作中心</a>
+          <a href="#" class="header-link">业务合作</a>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <!-- 分类筛选栏 -->
+        <div class="category-bar">
+          <div class="category-item active">推荐</div>
+          <div class="category-item">头像</div>
+          <div class="category-item">壁纸</div>
+          <div class="category-item">风景</div>
+          <div class="category-item">动漫</div>
+          <div class="category-item">美食</div>
+          <div class="category-item">艺术</div>
+          <div class="category-item">影视</div>
+          <div class="category-item">动物</div>
+          <div class="category-item">绘画</div>
+          <div class="category-item">情感</div>
+          <div class="category-item">生活</div>
+        </div>
+
+        <!-- 左侧导航栏 -->
+        <nav class="sidebar">
+          <div class="nav-item active">
+            <span class="nav-icon">🏠</span>
+            首页
+          </div>
+          <div class="nav-item">
+            <span class="nav-icon">🔍</span>
+            发现
+          </div>
+          <div class="nav-item">
+            <span class="nav-icon">🛍️</span>
+            闲置
+          </div>
+          <div class="nav-item">
+            <span class="nav-icon">💬</span>
+            消息
+          </div>
+          <div class="nav-item">
+            <span class="nav-icon">🔔</span>
+            通知
+          </div>
+          <div class="nav-item">
+            <span class="nav-icon">➕</span>
+            发布
+          </div>
+        </nav>
+
+        <!-- 右侧瀑布流内容区 -->
+        <main class="waterfall">
+          <div class="waterfall-item" data-id="1">
+            <div class="item-image">
+              <img src="images/1.jpg" alt="风景" />
+            </div>
+            <div class="item-content">
+              <h3>NPD vs ASPD：谁才是“王者”？</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #ff9500"></div>
+                  <span class="username">momo</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>256</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="2">
+            <div class="item-image">
+              <img src="images/2.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>原生家庭幸福VS原生家庭不幸福的女生</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #fb7299"></div>
+                  <span class="username">，，，，，</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>189</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="3">
+            <div class="item-image">
+              <img src="images/3.jpg" alt="NPD" />
+            </div>
+            <div class="item-content">
+              <h3>如何识别NPD人格特征</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">YH心理研究室</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="4">
+            <div class="item-image">
+              <img src="images/4.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>adhd一定工作记忆受损吗？</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #ffc107"></div>
+                  <span class="username">momo</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>542</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="5">
+            <div class="item-image">
+              <img src="images/5.jpg" alt="风景" />
+            </div>
+            <div class="item-content">
+              <h3>其实你根本你不是ADHD</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">不吃香菜</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="6">
+            <div class="item-image">
+              <img src="images/6.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>其实你是病了</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #ffc107"></div>
+                  <span class="username">别管了</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>1256</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="7">
+            <div class="item-image">
+              <img src="images/7.jpg" alt="风景" />
+            </div>
+            <div class="item-content">
+              <h3>焦虑不安，配得感低，明明我不缺爱</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #9c27b0"></div>
+                  <span class="username">明明</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>457</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="8">
+            <div class="item-image">
+              <img src="images/8.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>九个迹象说明原生家庭伤害过你</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #5e72e4"></div>
+                  <span class="username">野伞子</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>666</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="9">
+            <div class="item-image">
+              <img src="images/9.jpg" alt="风景" />
+            </div>
+            <div class="item-content">
+              <h3>8种高敏感人群才懂的痛苦</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #f44336"></div>
+                  <span class="username">十七</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>147</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="10">
+            <div class="item-image">
+              <img src="images/10.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>你不是共情、高敏感，而是过度警觉</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #fe2d54"></div>
+                  <span class="username">哈哈</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>448</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="11">
+            <div class="item-image">
+              <img src="images/11.jpg" alt="风景" />
+            </div>
+            <div class="item-content">
+              <h3>别再蹭“高敏感”了</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #ff9500"></div>
+                  <span class="username">小金桔</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>1289</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="12">
+            <div class="item-image">
+              <img src="images/12.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>给高敏感同学的挑战！她是哭还是笑？</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #fb7299"></div>
+                  <span class="username">含笑花</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="13">
+            <div class="item-image">
+              <img src="images/13.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>你喜欢的类型反映了你原生家庭的创伤</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">猪猪侠</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>765</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="14">
+            <div class="item-image">
+              <img src="images/14.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>bpd并不是“缺爱”而是被“溺爱”</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">春花秋月</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>556</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="15">
+            <div class="item-image">
+              <img src="images/15.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>求助!!!</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">Cherrir</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>765</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="16">
+            <div class="item-image">
+              <img src="images/16.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>找不到东西很抓狂？这可能是BPD并发行为</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">要做大女主</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="17">
+            <div class="item-image">
+              <img src="images/17.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>原来我有病</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">薯条成长日记</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>1124</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="18">
+            <div class="item-image">
+              <img src="images/18.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>你不是CPTSD/ADHD 你是PDA</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">小鼻噶</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>114</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="19">
+            <div class="item-image">
+              <img src="images/19.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>焦虑症的人好像都会出现脑雾</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">阳光</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>23</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="20">
+            <div class="item-image">
+              <img src="images/20.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>9个表现说明你的压力已经躯体化了</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">阳光心理</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>123</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="21">
+            <div class="item-image">
+              <img src="images/21.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>躯体化结束发现自己真的不是正常人</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">哈哈哈哈哈</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>143</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="22">
+            <div class="item-image">
+              <img src="images/22.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>感觉我就是装的</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">黎</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>1443</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="23">
+            <div class="item-image">
+              <img src="images/23.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>不一定是“大脑变笨”了，很可能是脑雾!</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">wawa心理研究所</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>13</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="24">
+            <div class="item-image">
+              <img src="images/24.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>ADHD的脑雾可能与低血压有关</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">重拳出击</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>139</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="25">
+            <div class="item-image">
+              <img src="images/25.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>每天学点心理学|你以为正常却有病的行为</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">每天学点儿心理学</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>133</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="26">
+            <div class="item-image">
+              <img src="images/26.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>每天学点心理学|你以为正常却有病的行为</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">学点儿心理学</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>133</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="27">
+            <div class="item-image">
+              <img src="images/27.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>舍不得睡觉，其实是情绪没有被满足</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">养生计划</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>133</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="28">
+            <div class="item-image">
+              <img src="images/28.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>提醒：以为很正常，其实正在变笨的现象</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">林妹妹说养生</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>143</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="29">
+            <div class="item-image">
+              <img src="images/29.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>🔥感统失调的 6 大原因、 5 大误区</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">苏苏说感统专注力</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>143</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="30">
+            <div class="item-image">
+              <img src="images/30.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>究竟是谁在引导大众为自己诊断精神类疾病？</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">想不开</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>1.3万</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="31">
+            <div class="item-image">
+              <img src="images/31.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>感统失调的常见表现</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">能力提升小帮手哦</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>13</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="32">
+            <div class="item-image">
+              <img src="images/32.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>当你出现这些症状，可能是焦虑强迫症作祟</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">不要再玉玉啦</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>135</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="33">
+            <div class="item-image">
+              <img src="images/33.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>强迫症是天才的通病</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">社恐心理师</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="34">
+            <div class="item-image">
+              <img src="images/34.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>强迫症的根源不是焦虑，而是更深层次的恐惧</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">走出强迫症指导</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="35">
+            <div class="item-image">
+              <img src="images/35.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>你是不是讨好型人格？</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">绿洲</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>185</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waterfall-item" data-id="36">
+            <div class="item-image">
+              <img src="images/36.jpg" alt="动漫" />
+            </div>
+            <div class="item-content">
+              <h3>原来这是焦虑性强迫症</h3>
+              <div class="item-footer">
+                <div class="user-info">
+                  <div class="avatar" style="background-color: #00c4ff"></div>
+                  <span class="username">绿</span>
+                </div>
+                <div class="interaction">
+                  <span class="like-icon"></span>
+                  <span>1785</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="" alt="" />
+          </div>
+          <div class="modal-info">
+            <div class="modal-user">
+              <div class="modal-avatar">用</div>
+              <div class="modal-user-info">
+                <div class="modal-username"></div>
+                <div class="modal-time">9个月前</div>
+              </div>
+              <button class="modal-follow">关注</button>
+            </div>
+            <h3 class="modal-title"></h3>
+            <div class="modal-description"></div>
+            <div class="modal-tags"></div>
+            <div class="modal-comments-section">
+              <h4 class="comments-title">评论(<span class="comments-count">0<span>)</h4>
+              <div class="comment-list"></div>
+            <div>
+            <div class="modal-stats">
+              <span>
+                <span class="icon-heart"></span>
+                <span class="modal-likes">0</span>
+              </span>
+              <span>
+                <span class="icon-comment"></span>
+                <span class="modal-comments">0</span>
+              </span>
+              <span>
+                <span class="icon-star"></span>
+                <span>收藏</span>
+              </span>
+            </div>
+            <div class="modal-input">
+              <input type="text" placeholder="请输入内容" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+            // 连接到 Processing 的 WebSocket 服务器
+            const socket = new WebSocket("ws://localhost:8080");
+            const statusElement = document.getElementById("status");
+
+            // 监听点击事件
+            document.addEventListener("click", (event) => {
+                // 获取网页视口尺寸
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+
+                // 获取点击坐标
+                const x = event.clientX;
+                const y = event.clientY;
+
+                // Processing 画布尺寸 (应与 Processing 代码中的 width, height 一致)
+                const processingWidth = 800;
+                const processingHeight = 600;
+
+                // 转换为 Processing 画布的相对坐标
+                const scaledX = (x / viewportWidth) * processingWidth;
+                const scaledY = (y / viewportHeight) * processingHeight;
+
+                // 确保坐标在画布范围内
+                const clampedX = Math.max(0, Math.min(processingWidth, scaledX));
+                const clampedY = Math.max(0, Math.min(processingHeight, scaledY));
+
+                const data = {
+                    x: clampedX,
+                    y: clampedY
+                };
+
+                // 将点击坐标发送到 Processing
+                if (socket.readyState === WebSocket.OPEN) {
+                    socket.send(JSON.stringify(data));
+                    console.log("点击坐标已发送:", data);
+                }
+            });
+
+            // 监听 WebSocket 连接状态
+            socket.addEventListener("open", (event) => {
+                statusElement.textContent = "已连接到 Processing";
+                console.log("已连接到 WebSocket 服务器");
+            });
+
+            socket.addEventListener("error", (event) => {
+                statusElement.textContent = "连接错误，请确保 Processing 正在运行";
+                console.error("WebSocket 连接错误:", event);
+            });
+
+            socket.addEventListener("close", (event) => {
+                statusElement.textContent = "连接已断开";
+                console.log("WebSocket 连接已关闭");
+            });
+        </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
